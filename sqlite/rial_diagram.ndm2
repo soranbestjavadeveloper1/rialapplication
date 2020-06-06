@@ -1,0 +1,978 @@
+{
+  "paper": {
+    "name": "A4",
+    "leftMargin": 0.5,
+    "rightMargin": 0.5,
+    "topMargin": 0.5,
+    "bottomMargin": 0.5,
+    "isPortriat": true
+  },
+  "modelVersion": 2.01,
+  "defaultSchema": "Default",
+  "server": {
+    "objectType": "Server_SQLITE",
+    "name": "Default",
+    "serverVersion": 3030001,
+    "edition": "Default",
+    "schemas": [
+      {
+        "objectType": "Schema_SQLITE",
+        "name": "Default",
+        "tables": [],
+        "views": []
+      },
+      {
+        "objectType": "Schema_SQLITE",
+        "name": "main",
+        "tables": [
+          {
+            "objectType": "Table_SQLITE",
+            "name": "aab",
+            "autoIncrement": -1,
+            "isWithoutRowID": false,
+            "oldName": "aab",
+            "rootPage": 2,
+            "sql": "CREATE TABLE \"aab\" (\r\n  \"shenase\" text NOT NULL,\r\n  \"nationalcode\" integer NOT NULL,\r\n  \"ghabele_pardakht\" integer NOT NULL,\r\n  \"bedehi\" integer NOT NULL DEFAULT 0,\r\n  \"mohlat\" TEXT NOT NULL,\r\n  \"vazeeyat\" TEXT NOT NULL DEFAULT \"پرداخت نشده\",\r\n  PRIMARY KEY (\"shenase\")\r\n)",
+            "hasIndexes": true,
+            "hasTriggers": false,
+            "hasAutoIncrementInDB": false,
+            "fields": [
+              {
+                "objectType": "TableField_SQLITE",
+                "name": "shenase",
+                "type": "text",
+                "size": -2147483648,
+                "scale": -2147483648,
+                "isNullable": "No",
+                "defaultValue": "",
+                "defaultValueType": "Others",
+                "collate": "",
+                "notNullOnConflict": "None",
+                "isAutoIncrement": false,
+                "oldName": "shenase"
+              },
+              {
+                "objectType": "TableField_SQLITE",
+                "name": "nationalcode",
+                "type": "integer",
+                "size": -2147483648,
+                "scale": -2147483648,
+                "isNullable": "No",
+                "defaultValue": "",
+                "defaultValueType": "Others",
+                "collate": "",
+                "notNullOnConflict": "None",
+                "isAutoIncrement": false,
+                "oldName": "nationalcode"
+              },
+              {
+                "objectType": "TableField_SQLITE",
+                "name": "ghabele_pardakht",
+                "type": "integer",
+                "size": -2147483648,
+                "scale": -2147483648,
+                "isNullable": "No",
+                "defaultValue": "",
+                "defaultValueType": "Others",
+                "collate": "",
+                "notNullOnConflict": "None",
+                "isAutoIncrement": false,
+                "oldName": "ghabele_pardakht"
+              },
+              {
+                "objectType": "TableField_SQLITE",
+                "name": "bedehi",
+                "type": "integer",
+                "size": -2147483648,
+                "scale": -2147483648,
+                "isNullable": "No",
+                "defaultValue": "0",
+                "defaultValueType": "Others",
+                "collate": "",
+                "notNullOnConflict": "None",
+                "isAutoIncrement": false,
+                "oldName": "bedehi"
+              },
+              {
+                "objectType": "TableField_SQLITE",
+                "name": "mohlat",
+                "type": "TEXT",
+                "size": -2147483648,
+                "scale": -2147483648,
+                "isNullable": "No",
+                "defaultValue": "",
+                "defaultValueType": "Others",
+                "collate": "",
+                "notNullOnConflict": "None",
+                "isAutoIncrement": false,
+                "oldName": "mohlat"
+              },
+              {
+                "objectType": "TableField_SQLITE",
+                "name": "vazeeyat",
+                "type": "TEXT",
+                "size": -2147483648,
+                "scale": -2147483648,
+                "isNullable": "No",
+                "defaultValue": "\"پرداخت نشده\"",
+                "defaultValueType": "Others",
+                "collate": "",
+                "notNullOnConflict": "None",
+                "isAutoIncrement": false,
+                "oldName": "vazeeyat"
+              }
+            ],
+            "indexes": [],
+            "primaryKey": {
+              "objectType": "PrimaryKey_SQLITE",
+              "name": "",
+              "fields": [
+                "shenase"
+              ],
+              "onConflict": "None",
+              "oldName": ""
+            },
+            "foreignKeys": [],
+            "uniques": [],
+            "checks": [],
+            "triggers": []
+          },
+          {
+            "objectType": "Table_SQLITE",
+            "name": "bargh",
+            "autoIncrement": -1,
+            "isWithoutRowID": false,
+            "oldName": "bargh",
+            "rootPage": 9,
+            "sql": "CREATE TABLE \"bargh\" (\r\n  \"shenase\" TEXT NOT NULL,\r\n  \"nationalcode\" integer NOT NULL,\r\n  \"ghabele_pardakht\" integer NOT NULL,\r\n  \"bedehi\" integer NOT NULL DEFAULT 0,\r\n  \"mohlat\" TEXT NOT NULL,\r\n  \"vazeeyat\" TEXT NOT NULL DEFAULT \"پرداخت نشده\",\r\n  PRIMARY KEY (\"shenase\")\r\n)",
+            "hasIndexes": true,
+            "hasTriggers": false,
+            "hasAutoIncrementInDB": false,
+            "fields": [
+              {
+                "objectType": "TableField_SQLITE",
+                "name": "shenase",
+                "type": "TEXT",
+                "size": -2147483648,
+                "scale": -2147483648,
+                "isNullable": "No",
+                "defaultValue": "",
+                "defaultValueType": "Others",
+                "collate": "",
+                "notNullOnConflict": "None",
+                "isAutoIncrement": false,
+                "oldName": "shenase"
+              },
+              {
+                "objectType": "TableField_SQLITE",
+                "name": "nationalcode",
+                "type": "integer",
+                "size": -2147483648,
+                "scale": -2147483648,
+                "isNullable": "No",
+                "defaultValue": "",
+                "defaultValueType": "Others",
+                "collate": "",
+                "notNullOnConflict": "None",
+                "isAutoIncrement": false,
+                "oldName": "nationalcode"
+              },
+              {
+                "objectType": "TableField_SQLITE",
+                "name": "ghabele_pardakht",
+                "type": "integer",
+                "size": -2147483648,
+                "scale": -2147483648,
+                "isNullable": "No",
+                "defaultValue": "",
+                "defaultValueType": "Others",
+                "collate": "",
+                "notNullOnConflict": "None",
+                "isAutoIncrement": false,
+                "oldName": "ghabele_pardakht"
+              },
+              {
+                "objectType": "TableField_SQLITE",
+                "name": "bedehi",
+                "type": "integer",
+                "size": -2147483648,
+                "scale": -2147483648,
+                "isNullable": "No",
+                "defaultValue": "0",
+                "defaultValueType": "Others",
+                "collate": "",
+                "notNullOnConflict": "None",
+                "isAutoIncrement": false,
+                "oldName": "bedehi"
+              },
+              {
+                "objectType": "TableField_SQLITE",
+                "name": "mohlat",
+                "type": "TEXT",
+                "size": -2147483648,
+                "scale": -2147483648,
+                "isNullable": "No",
+                "defaultValue": "",
+                "defaultValueType": "Others",
+                "collate": "",
+                "notNullOnConflict": "None",
+                "isAutoIncrement": false,
+                "oldName": "mohlat"
+              },
+              {
+                "objectType": "TableField_SQLITE",
+                "name": "vazeeyat",
+                "type": "TEXT",
+                "size": -2147483648,
+                "scale": -2147483648,
+                "isNullable": "No",
+                "defaultValue": "\"پرداخت نشده\"",
+                "defaultValueType": "Others",
+                "collate": "",
+                "notNullOnConflict": "None",
+                "isAutoIncrement": false,
+                "oldName": "vazeeyat"
+              }
+            ],
+            "indexes": [],
+            "primaryKey": {
+              "objectType": "PrimaryKey_SQLITE",
+              "name": "",
+              "fields": [
+                "shenase"
+              ],
+              "onConflict": "None",
+              "oldName": ""
+            },
+            "foreignKeys": [],
+            "uniques": [],
+            "checks": [],
+            "triggers": []
+          },
+          {
+            "objectType": "Table_SQLITE",
+            "name": "cardlist",
+            "autoIncrement": -1,
+            "isWithoutRowID": false,
+            "oldName": "cardlist",
+            "rootPage": 6,
+            "sql": "CREATE TABLE \"cardlist\" (\r\n  \"nationalcode_owner\" integer(10) NOT NULL,\r\n  \"cardnum\" INTEGER(16) NOT NULL,\r\n  \"balance\" integer NOT NULL,\r\n  \"bankname\" TEXT NOT NULL DEFAULT \"mellat\",\r\n  \"cardpassword\" integer NOT NULL,\r\n  \"cvv2\" integer(4,4) NOT NULL,\r\n  \"expiredate\" TEXT NOT NULL,\r\n  \"secondpass\" integer,\r\n  PRIMARY KEY (\"cardnum\"),\r\n  CONSTRAINT \"fk1\" FOREIGN KEY (\"nationalcode_owner\") REFERENCES \"users\" (\"nationalcode\") ON DELETE CASCADE ON UPDATE CASCADE,\r\n  CONSTRAINT \"c1\" CHECK (length(cardpassword)>=4)\r\n)",
+            "hasIndexes": true,
+            "hasTriggers": false,
+            "hasAutoIncrementInDB": false,
+            "fields": [
+              {
+                "objectType": "TableField_SQLITE",
+                "name": "nationalcode_owner",
+                "type": "integer",
+                "size": 10,
+                "scale": -2147483648,
+                "isNullable": "No",
+                "defaultValue": "",
+                "defaultValueType": "Others",
+                "collate": "",
+                "notNullOnConflict": "None",
+                "isAutoIncrement": false,
+                "oldName": "nationalcode_owner"
+              },
+              {
+                "objectType": "TableField_SQLITE",
+                "name": "cardnum",
+                "type": "INTEGER",
+                "size": 16,
+                "scale": -2147483648,
+                "isNullable": "No",
+                "defaultValue": "",
+                "defaultValueType": "Others",
+                "collate": "",
+                "notNullOnConflict": "None",
+                "isAutoIncrement": false,
+                "oldName": "cardnum"
+              },
+              {
+                "objectType": "TableField_SQLITE",
+                "name": "balance",
+                "type": "integer",
+                "size": -2147483648,
+                "scale": -2147483648,
+                "isNullable": "No",
+                "defaultValue": "",
+                "defaultValueType": "Others",
+                "collate": "",
+                "notNullOnConflict": "None",
+                "isAutoIncrement": false,
+                "oldName": "balance"
+              },
+              {
+                "objectType": "TableField_SQLITE",
+                "name": "bankname",
+                "type": "TEXT",
+                "size": -2147483648,
+                "scale": -2147483648,
+                "isNullable": "No",
+                "defaultValue": "\"mellat\"",
+                "defaultValueType": "Others",
+                "collate": "",
+                "notNullOnConflict": "None",
+                "isAutoIncrement": false,
+                "oldName": "bankname"
+              },
+              {
+                "objectType": "TableField_SQLITE",
+                "name": "cardpassword",
+                "type": "integer",
+                "size": -2147483648,
+                "scale": -2147483648,
+                "isNullable": "No",
+                "defaultValue": "",
+                "defaultValueType": "Others",
+                "collate": "",
+                "notNullOnConflict": "None",
+                "isAutoIncrement": false,
+                "oldName": "cardpassword"
+              },
+              {
+                "objectType": "TableField_SQLITE",
+                "name": "cvv2",
+                "type": "integer",
+                "size": 4,
+                "scale": 4,
+                "isNullable": "No",
+                "defaultValue": "",
+                "defaultValueType": "Others",
+                "collate": "",
+                "notNullOnConflict": "None",
+                "isAutoIncrement": false,
+                "oldName": "cvv2"
+              },
+              {
+                "objectType": "TableField_SQLITE",
+                "name": "expiredate",
+                "type": "TEXT",
+                "size": -2147483648,
+                "scale": -2147483648,
+                "isNullable": "No",
+                "defaultValue": "",
+                "defaultValueType": "Others",
+                "collate": "",
+                "notNullOnConflict": "None",
+                "isAutoIncrement": false,
+                "oldName": "expiredate"
+              },
+              {
+                "objectType": "TableField_SQLITE",
+                "name": "secondpass",
+                "type": "integer",
+                "size": -2147483648,
+                "scale": -2147483648,
+                "isNullable": "Yes",
+                "defaultValue": "",
+                "defaultValueType": "Others",
+                "collate": "",
+                "notNullOnConflict": "None",
+                "isAutoIncrement": false,
+                "oldName": "secondpass"
+              }
+            ],
+            "indexes": [],
+            "primaryKey": {
+              "objectType": "PrimaryKey_SQLITE",
+              "name": "",
+              "fields": [
+                "cardnum"
+              ],
+              "onConflict": "None",
+              "oldName": ""
+            },
+            "foreignKeys": [
+              {
+                "objectType": "ForeignKey_SQLITE",
+                "name": "fk1",
+                "fields": [
+                  "nationalcode_owner"
+                ],
+                "referencedSchema": "main",
+                "referencedTable": "users",
+                "referencedFields": [
+                  "nationalcode"
+                ],
+                "onDelete": "CASCADE",
+                "onUpdate": "CASCADE",
+                "isDeferred": false,
+                "sourceCardinality": "ZeroOrManyRelationship",
+                "targetCardinality": "OneAndOnlyOneRelationship",
+                "oldName": "fk1"
+              }
+            ],
+            "uniques": [],
+            "checks": [
+              {
+                "objectType": "Check_SQLITE",
+                "name": "c1",
+                "expression": "length(cardpassword)>=4",
+                "oldName": "c1"
+              }
+            ],
+            "triggers": []
+          },
+          {
+            "objectType": "Table_SQLITE",
+            "name": "gaz",
+            "autoIncrement": -1,
+            "isWithoutRowID": false,
+            "oldName": "gaz",
+            "rootPage": 5,
+            "sql": "CREATE TABLE \"gaz\" (\r\n  \"shenase\" TEXT NOT NULL,\r\n  \"nationalcode\" integer NOT NULL,\r\n  \"ghabele_pardakht\" integer NOT NULL,\r\n  \"bedehi\" integer NOT NULL DEFAULT 0,\r\n  \"mohlat\" TEXT NOT NULL,\r\n  \"vazeeyat\" TEXT NOT NULL DEFAULT \"پرداخت نشده\",\r\n  PRIMARY KEY (\"shenase\")\r\n)",
+            "hasIndexes": true,
+            "hasTriggers": false,
+            "hasAutoIncrementInDB": false,
+            "fields": [
+              {
+                "objectType": "TableField_SQLITE",
+                "name": "shenase",
+                "type": "TEXT",
+                "size": -2147483648,
+                "scale": -2147483648,
+                "isNullable": "No",
+                "defaultValue": "",
+                "defaultValueType": "Others",
+                "collate": "",
+                "notNullOnConflict": "None",
+                "isAutoIncrement": false,
+                "oldName": "shenase"
+              },
+              {
+                "objectType": "TableField_SQLITE",
+                "name": "nationalcode",
+                "type": "integer",
+                "size": -2147483648,
+                "scale": -2147483648,
+                "isNullable": "No",
+                "defaultValue": "",
+                "defaultValueType": "Others",
+                "collate": "",
+                "notNullOnConflict": "None",
+                "isAutoIncrement": false,
+                "oldName": "nationalcode"
+              },
+              {
+                "objectType": "TableField_SQLITE",
+                "name": "ghabele_pardakht",
+                "type": "integer",
+                "size": -2147483648,
+                "scale": -2147483648,
+                "isNullable": "No",
+                "defaultValue": "",
+                "defaultValueType": "Others",
+                "collate": "",
+                "notNullOnConflict": "None",
+                "isAutoIncrement": false,
+                "oldName": "ghabele_pardakht"
+              },
+              {
+                "objectType": "TableField_SQLITE",
+                "name": "bedehi",
+                "type": "integer",
+                "size": -2147483648,
+                "scale": -2147483648,
+                "isNullable": "No",
+                "defaultValue": "0",
+                "defaultValueType": "Others",
+                "collate": "",
+                "notNullOnConflict": "None",
+                "isAutoIncrement": false,
+                "oldName": "bedehi"
+              },
+              {
+                "objectType": "TableField_SQLITE",
+                "name": "mohlat",
+                "type": "TEXT",
+                "size": -2147483648,
+                "scale": -2147483648,
+                "isNullable": "No",
+                "defaultValue": "",
+                "defaultValueType": "Others",
+                "collate": "",
+                "notNullOnConflict": "None",
+                "isAutoIncrement": false,
+                "oldName": "mohlat"
+              },
+              {
+                "objectType": "TableField_SQLITE",
+                "name": "vazeeyat",
+                "type": "TEXT",
+                "size": -2147483648,
+                "scale": -2147483648,
+                "isNullable": "No",
+                "defaultValue": "\"پرداخت نشده\"",
+                "defaultValueType": "Others",
+                "collate": "",
+                "notNullOnConflict": "None",
+                "isAutoIncrement": false,
+                "oldName": "vazeeyat"
+              }
+            ],
+            "indexes": [],
+            "primaryKey": {
+              "objectType": "PrimaryKey_SQLITE",
+              "name": "",
+              "fields": [
+                "shenase"
+              ],
+              "onConflict": "None",
+              "oldName": ""
+            },
+            "foreignKeys": [],
+            "uniques": [],
+            "checks": [],
+            "triggers": []
+          },
+          {
+            "objectType": "Table_SQLITE",
+            "name": "transactions",
+            "autoIncrement": -1,
+            "isWithoutRowID": false,
+            "oldName": "transactions",
+            "rootPage": 4,
+            "sql": "CREATE TABLE \"transactions\" (\r\n  \"sourcecard\" integer(16) NOT NULL,\r\n  \"destcard\" integer(16) NOT NULL,\r\n  \"transaction\" integer NOT NULL,\r\n  \"date\" TEXT NOT NULL,\r\n  CONSTRAINT \"f1\" FOREIGN KEY (\"sourcecard\") REFERENCES \"cardlist\" (\"cardnum\") ON DELETE NO ACTION ON UPDATE NO ACTION,\r\n  CONSTRAINT \"f2\" FOREIGN KEY (\"destcard\") REFERENCES \"cardlist\" (\"cardnum\") ON DELETE NO ACTION ON UPDATE NO ACTION,\r\n  CONSTRAINT \"c1\" CHECK (\"transaction\">0)\r\n)",
+            "hasIndexes": false,
+            "hasTriggers": false,
+            "hasAutoIncrementInDB": false,
+            "fields": [
+              {
+                "objectType": "TableField_SQLITE",
+                "name": "sourcecard",
+                "type": "integer",
+                "size": 16,
+                "scale": -2147483648,
+                "isNullable": "No",
+                "defaultValue": "",
+                "defaultValueType": "Others",
+                "collate": "",
+                "notNullOnConflict": "None",
+                "isAutoIncrement": false,
+                "oldName": "sourcecard"
+              },
+              {
+                "objectType": "TableField_SQLITE",
+                "name": "destcard",
+                "type": "integer",
+                "size": 16,
+                "scale": -2147483648,
+                "isNullable": "No",
+                "defaultValue": "",
+                "defaultValueType": "Others",
+                "collate": "",
+                "notNullOnConflict": "None",
+                "isAutoIncrement": false,
+                "oldName": "destcard"
+              },
+              {
+                "objectType": "TableField_SQLITE",
+                "name": "transaction",
+                "type": "integer",
+                "size": -2147483648,
+                "scale": -2147483648,
+                "isNullable": "No",
+                "defaultValue": "",
+                "defaultValueType": "Others",
+                "collate": "",
+                "notNullOnConflict": "None",
+                "isAutoIncrement": false,
+                "oldName": "transaction"
+              },
+              {
+                "objectType": "TableField_SQLITE",
+                "name": "date",
+                "type": "TEXT",
+                "size": -2147483648,
+                "scale": -2147483648,
+                "isNullable": "No",
+                "defaultValue": "",
+                "defaultValueType": "Others",
+                "collate": "",
+                "notNullOnConflict": "None",
+                "isAutoIncrement": false,
+                "oldName": "date"
+              }
+            ],
+            "indexes": [],
+            "primaryKey": {
+              "objectType": "PrimaryKey_SQLITE",
+              "name": "",
+              "fields": [],
+              "onConflict": "None",
+              "oldName": ""
+            },
+            "foreignKeys": [
+              {
+                "objectType": "ForeignKey_SQLITE",
+                "name": "f1",
+                "fields": [
+                  "sourcecard"
+                ],
+                "referencedSchema": "main",
+                "referencedTable": "cardlist",
+                "referencedFields": [
+                  "cardnum"
+                ],
+                "onDelete": "NO ACTION",
+                "onUpdate": "NO ACTION",
+                "isDeferred": false,
+                "sourceCardinality": "ZeroOrManyRelationship",
+                "targetCardinality": "OneAndOnlyOneRelationship",
+                "oldName": "f1"
+              },
+              {
+                "objectType": "ForeignKey_SQLITE",
+                "name": "f2",
+                "fields": [
+                  "destcard"
+                ],
+                "referencedSchema": "main",
+                "referencedTable": "cardlist",
+                "referencedFields": [
+                  "cardnum"
+                ],
+                "onDelete": "NO ACTION",
+                "onUpdate": "NO ACTION",
+                "isDeferred": false,
+                "sourceCardinality": "ZeroOrManyRelationship",
+                "targetCardinality": "OneAndOnlyOneRelationship",
+                "oldName": "f2"
+              }
+            ],
+            "uniques": [],
+            "checks": [
+              {
+                "objectType": "Check_SQLITE",
+                "name": "c1",
+                "expression": "\"transaction\">0",
+                "oldName": "c1"
+              }
+            ],
+            "triggers": []
+          },
+          {
+            "objectType": "Table_SQLITE",
+            "name": "users",
+            "autoIncrement": -1,
+            "isWithoutRowID": false,
+            "oldName": "users",
+            "rootPage": 13,
+            "sql": "CREATE TABLE \"users\" (\r\n  \"nationalcode\" integer NOT NULL,\r\n  \"fname\" text NOT NULL,\r\n  \"lname\" TEXT NOT NULL,\r\n  \"lasttime\" TEXT DEFAULT null,\r\n  \"phone_number\" TEXT NOT NULL,\r\n  PRIMARY KEY (\"nationalcode\")\r\n)",
+            "hasIndexes": false,
+            "hasTriggers": false,
+            "hasAutoIncrementInDB": false,
+            "fields": [
+              {
+                "objectType": "TableField_SQLITE",
+                "name": "nationalcode",
+                "type": "integer",
+                "size": -2147483648,
+                "scale": -2147483648,
+                "isNullable": "No",
+                "defaultValue": "",
+                "defaultValueType": "Others",
+                "collate": "",
+                "notNullOnConflict": "None",
+                "isAutoIncrement": false,
+                "oldName": "nationalcode"
+              },
+              {
+                "objectType": "TableField_SQLITE",
+                "name": "fname",
+                "type": "text",
+                "size": -2147483648,
+                "scale": -2147483648,
+                "isNullable": "No",
+                "defaultValue": "",
+                "defaultValueType": "Others",
+                "collate": "",
+                "notNullOnConflict": "None",
+                "isAutoIncrement": false,
+                "oldName": "fname"
+              },
+              {
+                "objectType": "TableField_SQLITE",
+                "name": "lname",
+                "type": "TEXT",
+                "size": -2147483648,
+                "scale": -2147483648,
+                "isNullable": "No",
+                "defaultValue": "",
+                "defaultValueType": "Others",
+                "collate": "",
+                "notNullOnConflict": "None",
+                "isAutoIncrement": false,
+                "oldName": "lname"
+              },
+              {
+                "objectType": "TableField_SQLITE",
+                "name": "lasttime",
+                "type": "TEXT",
+                "size": -2147483648,
+                "scale": -2147483648,
+                "isNullable": "Yes",
+                "defaultValue": "",
+                "defaultValueType": "Null",
+                "collate": "",
+                "notNullOnConflict": "None",
+                "isAutoIncrement": false,
+                "oldName": "lasttime"
+              },
+              {
+                "objectType": "TableField_SQLITE",
+                "name": "phone_number",
+                "type": "TEXT",
+                "size": -2147483648,
+                "scale": -2147483648,
+                "isNullable": "No",
+                "defaultValue": "",
+                "defaultValueType": "Others",
+                "collate": "",
+                "notNullOnConflict": "None",
+                "isAutoIncrement": false,
+                "oldName": "phone_number"
+              }
+            ],
+            "indexes": [],
+            "primaryKey": {
+              "objectType": "PrimaryKey_SQLITE",
+              "name": "",
+              "fields": [
+                "nationalcode"
+              ],
+              "onConflict": "None",
+              "oldName": ""
+            },
+            "foreignKeys": [],
+            "uniques": [],
+            "checks": [],
+            "triggers": []
+          }
+        ],
+        "views": []
+      }
+    ]
+  },
+  "diagrams": [
+    {
+      "name": "Diagram 1",
+      "paperWidth": 1,
+      "paperHeight": 1,
+      "tableFont": "Arial Unicode MS",
+      "tableFontSize": 14,
+      "isBalckWhite": false,
+      "showDBSchemaName": false,
+      "showViewRelations": true,
+      "notation": "default",
+      "showFieldComment": false,
+      "showTableComment": false,
+      "shapes": [
+        {
+          "type": "table",
+          "schemaName": "main",
+          "tableName": "aab",
+          "x": 30,
+          "y": 290,
+          "width": 193,
+          "height": 170,
+          "isBold": false,
+          "titleColor": {
+            "r": 55,
+            "g": 131,
+            "b": 192,
+            "a": 1
+          }
+        },
+        {
+          "type": "table",
+          "schemaName": "main",
+          "tableName": "bargh",
+          "x": 290,
+          "y": 290,
+          "width": 193,
+          "height": 170,
+          "isBold": false,
+          "titleColor": {
+            "r": 55,
+            "g": 131,
+            "b": 192,
+            "a": 1
+          }
+        },
+        {
+          "type": "table",
+          "schemaName": "main",
+          "tableName": "cardlist",
+          "x": 330,
+          "y": 20,
+          "width": 308,
+          "height": 210,
+          "isBold": false,
+          "titleColor": {
+            "r": 55,
+            "g": 131,
+            "b": 192,
+            "a": 1
+          }
+        },
+        {
+          "type": "table",
+          "schemaName": "main",
+          "tableName": "gaz",
+          "x": 560,
+          "y": 290,
+          "width": 193,
+          "height": 170,
+          "isBold": false,
+          "titleColor": {
+            "r": 55,
+            "g": 131,
+            "b": 192,
+            "a": 1
+          }
+        },
+        {
+          "type": "table",
+          "schemaName": "main",
+          "tableName": "transactions",
+          "x": 30,
+          "y": 60,
+          "width": 255,
+          "height": 130,
+          "isBold": false,
+          "titleColor": {
+            "r": 55,
+            "g": 131,
+            "b": 192,
+            "a": 1
+          }
+        },
+        {
+          "type": "table",
+          "schemaName": "main",
+          "tableName": "users",
+          "x": 690,
+          "y": 50,
+          "width": 165,
+          "height": 150,
+          "isBold": false,
+          "titleColor": {
+            "r": 55,
+            "g": 131,
+            "b": 192,
+            "a": 1
+          }
+        }
+      ],
+      "layers": [],
+      "relations": [
+        {
+          "name": "f1",
+          "sourceTableName": "transactions",
+          "sourceSchemaName": "main",
+          "lineWidth": 1,
+          "visible": true,
+          "vertices": [
+            {
+              "x": 300,
+              "y": 145
+            },
+            {
+              "x": 315,
+              "y": 145
+            }
+          ],
+          "label": {
+            "x": 296,
+            "y": 147,
+            "width": 50,
+            "height": 30,
+            "fontName": "Arial Unicode MS",
+            "fontSize": 14,
+            "fontColor": {
+              "r": 51,
+              "g": 51,
+              "b": 51,
+              "a": 1
+            },
+            "isFontBold": false,
+            "isFontItalic": false,
+            "isVisible": false
+          }
+        },
+        {
+          "name": "f2",
+          "sourceTableName": "transactions",
+          "sourceSchemaName": "main",
+          "lineWidth": 1,
+          "visible": true,
+          "vertices": [
+            {
+              "x": 300,
+              "y": 115
+            },
+            {
+              "x": 315,
+              "y": 115
+            }
+          ],
+          "label": {
+            "x": 296,
+            "y": 117,
+            "width": 50,
+            "height": 30,
+            "fontName": "Arial Unicode MS",
+            "fontSize": 14,
+            "fontColor": {
+              "r": 51,
+              "g": 51,
+              "b": 51,
+              "a": 1
+            },
+            "isFontBold": false,
+            "isFontItalic": false,
+            "isVisible": false
+          }
+        },
+        {
+          "name": "fk1",
+          "sourceTableName": "cardlist",
+          "sourceSchemaName": "main",
+          "lineWidth": 1,
+          "visible": true,
+          "vertices": [
+            {
+              "x": 653,
+              "y": 130
+            },
+            {
+              "x": 675,
+              "y": 130
+            }
+          ],
+          "label": {
+            "x": 649,
+            "y": 132,
+            "width": 50,
+            "height": 30,
+            "fontName": "Arial Unicode MS",
+            "fontSize": 14,
+            "fontColor": {
+              "r": 51,
+              "g": 51,
+              "b": 51,
+              "a": 1
+            },
+            "isFontBold": false,
+            "isFontItalic": false,
+            "isVisible": false
+          }
+        }
+      ],
+      "viewRelations": []
+    }
+  ]
+}
